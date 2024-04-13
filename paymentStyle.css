@@ -1,6 +1,19 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(./montserrat/Montserrat-Medium.ttf);
+}
 *{
     padding: 0;
     margin: 0;
+}
+body{
+    background-image: url("Images/background.jpg");
+    background-size: cover;
+    color:#000;
+    border:3px solid white;
+    margin:auto;
+    min-height: 100vh;
+    font-family: "Montserrat";
 }
 h1{
     text-align: left;
@@ -17,17 +30,20 @@ form{
     box-shadow: 5px 5px 5px 2px;
     border-radius: 10px;
     height: 300px;
+    font-family: "Montserrat";
 }
 form h2{
     text-align: right;
     color: blue;
     padding-bottom:30px;
+    font-family: "Montserrat";
 }
 form label{
     color:grey;
     font-size: 15px;
     padding-bottom: 5px;
     margin-right: 10px;
+    font-family: "Montserrat";
 }
 
 form input{
@@ -37,7 +53,8 @@ form input{
     border-bottom: 1px solid grey;
     margin-bottom: 20px;
     margin-right: auto;
-    margin-left:auto
+    margin-left:auto;
+    font-family: "Montserrat";
 }
 #big{
     display: flex;
@@ -53,6 +70,7 @@ main{
     align-items: center;
     background-color: #f1f1f1;
     height: 100vh;
+    font-family: "Montserrat";
 }
 main>div{
     margin:20px;
@@ -78,6 +96,7 @@ main>div{
     text-align: center;
     justify-content: center;
     transform: translate(0, -350px);
+    font-family: "Montserrat";
 }
 #pay button{
     padding: 10px;
@@ -88,6 +107,7 @@ main>div{
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    font-family: "Montserrat";
 }
 
 .container{
@@ -116,37 +136,32 @@ main>div{
    margin: auto;
    align-items: right;
 }
-/*this just the welcome banner of website*/
-#Name{
-    font-size: 100px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:gold;
-    text-align: center;
-    background-image: url("Images/Banner2.jpg");
-    background-size:contain;
-    height:300px;
-}
+
 /*this is to design the navigation bar horizonatallyand to set it's background and the basic styling*/
 #navbar{
-    display: flex;
+   display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: silver;
-    border:3px solid gray;
+    background-color: rgba(0,0,0,0.2);
+    border:none;
     width:1000px;
     height: 50px;
     border-radius: 20px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 160px;
-    
-
+    flex-direction: row;
+    padding: 10px;
 }
 /*this is to design the a tag of the navigation bar*/
 #navbar a{
     text-decoration: none;    
     display:inline-block;
     text-align: center;
+    padding: 10px 15px;
+    color: silver;
+    margin: 0 10px;
+    font-family: "Montserrat";
 }
 /*this is to remove the bulleting points on the list items of the navigation bar*/
 #navbar li{
@@ -157,17 +172,13 @@ main>div{
 }
 /* this is to set the pseudo hover  class of the navigation bar*/
 #navbar a:hover{
-    background-color:black;
+    background-color:rgb(190,190,190);
     color: white;
 }
 /*this is to set the pseudo active class of the navigation bar*/
 #navbar a:active{
     background-color: white;
     color: black;
-}
-/*lastly this is for setting the pseudo visited clas of the navigation bar*/
-#navbar a:visited{
-    color: purple;
 }
 /* the above code is going to be common on all webpage of the website*/
 
