@@ -30,6 +30,8 @@
 @font-face {
     font-family: "Montserrat";
     src: url(./montserrat/Montserrat-Medium.ttf);
+    font-family: Maxini;
+    src: url('maxini.ttf');
 }
 body{
     background-image: url("Images/background.jpg");
@@ -110,6 +112,9 @@ body{
     background-color: white;
     color: black;
 }
+#navbar a:visited{
+    color: antiquewhite;
+}
 
 /*This to set so the  img have the maximum width and height of the window if possible*/
 img{
@@ -125,20 +130,12 @@ img{
 }
 /*this is to edit the sliding welcome marque*/
 #welcome p{
+    font-family: 'Maxini', Courier, monospace;
     margin-top: auto;
     margin-bottom: auto;
-    color: gold;
+    color:black;
 }
 /*this is to edit the paragraph in the marque*/
-#promotion{
-    border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 320px;
-    max-width: 100%;
-    object-fit:fill;
-}
-/*this is to edit the promotion banner*/
 main{
     background-color: grey;
 }

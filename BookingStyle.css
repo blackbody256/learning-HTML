@@ -1,6 +1,8 @@
 @font-face {
     font-family: "Montserrat";
     src: url(./montserrat/Montserrat-Medium.ttf);
+    font-family:Merry;
+    src: url(Merriweather/Merriweather-Bold.ttf);
 }
 body{
     background-image: url("Images/background.jpg");

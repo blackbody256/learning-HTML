@@ -1,6 +1,8 @@
 @font-face {
     font-family: "Montserrat";
     src: url(./montserrat/Montserrat-Medium.ttf);
+    font-family:Merry;
+    src: url(Merriweather/Merriweather-Bold.ttf);
 }
 body{
     background-image: url("Images/background.jpg");
@@ -88,10 +90,12 @@ img{
 
 /*this to set the marquee designs of the welcome page*/
 main{
-    color: white;
+    color:whitesmoke;
+    background: transparent;
+    backdrop-filter: blur(10px);
     text-align: center;
     font-size: x-large;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Merry', Arial, sans-serif;
 
 }
 footer{
@@ -101,6 +105,7 @@ footer{
 footer div{
     flex: 1;
     padding: 10px;
+    font-family: "Montserrat", sans-serif;
 }
 h2>a:visited{
     color: white;
@@ -110,4 +115,4 @@ h2>a:visited{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-}0s
+}

@@ -177,3 +177,13 @@ header{
     height: 100px;
     border-radius: 50%;
 }
+main{
+    background: transparent;
+    backdrop-filter: blur(20px);
+    
+}
+h1{
+    color: bisque;
+    text-decoration: underline;
+    text-align: center;
+}
