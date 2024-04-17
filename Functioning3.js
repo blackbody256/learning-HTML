@@ -20,3 +20,17 @@ function changeImage(){
 }
 setInterval(changeImage,5000);
 //this will call the function changeImage every 3seconds
+let popup = document.getElementById("popup");
+function openPopup(){
+    popup.classList.add("open");
+}
+function closePopup(){
+    popup.classList.remove("open"); 
+}
+let popup2 = document.getElementById("popup1");
+function openPopup1(){
+    popup2.classList.add("open");
+}
+function closePopup1(){
+    popup2.classList.remove("open"); 
+}

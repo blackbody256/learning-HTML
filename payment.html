@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="paymentStyle.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="fontawesome.min.css">
 </head>
 <body>
     <header>
@@ -16,8 +18,8 @@
                 <span><p>De Paris</p></span>
             </div>
             <div class="container1">
-                <input type ="button" value = "Sign Up">
-                <input type ="button" value ="Login">
+                <input type ="button" value = "Sign Up" onclick="openPopup1()">
+                <input type ="button" value ="Login" onclick="openPopup()">
                 
             </div>
         </section>
@@ -33,13 +35,50 @@
                 </ul>
             </nav>
         </section>
+        <div class="popup"  id="popup1">
+            <img src="Images/Favicon.jpg" alt="this is an image">
+            <h2>Sign up</h2>
+            <br>
+            <input type="email" name="value" id="email" required pattern="[a-z0-9]+@[a-z0-9]+.[a-z]" placeholder="Email"><br>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button onclick="closePopup1()">Submit</button>
+            <p>Or sign with a social network:</p><br>
+            <div id="icons">
+                <i class="fa-brands fa-facebook" style="color: #74C0FC;"class="icon"></i>
+                <i class="fa-brands fa-google" style="color: #2ec27e;" class="icon"></i>
+                <i class="fa-brands fa-square-x-twitter" style="color: #74C0FC;" class="icon"></i>
+            </div>
+            <div class="remember">
+                <input type="checkbox" id="check">
+                <label for="check">Remember me</label>
+            </div>
+        </div>
+        <div class="popup"  id="popup">
+            <img src="Images/Favicon.jpg" alt="this is an image">
+            <h2>Login</h2>
+            <br>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button onclick="closePopup()">Login</button>
+            <p>Or sign with a social network:</p><br>
+            <div id="icons">
+                <i class="fa-brands fa-facebook" style="color: #74C0FC;"class="icon"></i>
+                <i class="fa-brands fa-google" style="color: #2ec27e;" class="icon"></i>
+                <i class="fa-brands fa-square-x-twitter" style="color: #74C0FC;" class="icon"></i>
+            </div>
+            <div class="remember">
+                <input type="checkbox" id="check">
+                <label for="check">Remember me</label>
+            </div>
+        </div>
     </header>
     <main>
         <div>
             <h1>Card information</h1>
             <p>Indicate details of the card from which money will be debited</p>
             <form action="payment.php" method="post">
-                <h2>VISA</h2>
+                <h2>VISA <i class="fa-brands fa-cc-mastercard"></i></h2>
                 <label for="cardNumber">Card number</label><br>
                 <input type="text" name="cardNumber" id="cardNumber" placeholder="0000 0000 0000 0000" required>
                 <div id="big">
@@ -82,5 +121,6 @@
             <a href="mail to laGrande@fake.com" title="mail to us"><p>LaGrande@fake.com</p></a>
         </div>
     </footer>
+    <script src="Functioning.js"></script>
 </body>
 </html>

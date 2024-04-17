@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="popup.css">
     <link rel="icon" href="Images/Favicon.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="fontawesome.min.css">
 </head>
 <body>
     <div class="container">
         <button class="btn" onclick="openPopup()">Login</button>
-        <div class="popup open"  id="popup">
+        <div class="popup"  id="popup">
             <img src="Images/Favicon.jpg" alt="this is an image">
             <h2>Login</h2>
             <br>
@@ -19,6 +21,38 @@
             <input type="password" placeholder="Password">
             <button onclick="closePopup()">Login</button>
             <p>Or sign with a social network:</p><br>
+            <div id="icons">
+                <i class="fa-brands fa-facebook" style="color: #74C0FC;"class="icon"></i>
+                <i class="fa-brands fa-google" style="color: #2ec27e;" class="icon"></i>
+                <i class="fa-brands fa-square-x-twitter" style="color: #74C0FC;" class="icon"></i>
+            </div>
+            <div class="remember">
+                <input type="checkbox" id="check">
+                <label for="check">Remember me</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <button class="btn" onclick="openPopup1()">Sign up</button>
+        <div class="popup"  id="popup1">
+            <img src="Images/Favicon.jpg" alt="this is an image">
+            <h2>Sign up</h2>
+            <br>
+            <input type="email" name="value" id="email" required pattern="[a-z0-9]+@[a-z0-9]+.[a-z]"><br>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button onclick="closePopup1()">Submit</button>
+            <p>Or sign with a social network:</p><br>
+            <div id="icons">
+                <i class="fa-brands fa-facebook" style="color: #74C0FC;"class="icon"></i>
+                <i class="fa-brands fa-google" style="color: #2ec27e;" class="icon"></i>
+                <i class="fa-brands fa-square-x-twitter" style="color: #74C0FC;" class="icon"></i>
+            </div>
+            <div class="remember">
+                <input type="checkbox" id="check">
+                <label for="check">Remember me</label>
+            </div>
         </div>
     </div>
 
@@ -29,6 +63,13 @@
         }
         function closePopup(){
             popup.classList.remove("open"); 
+        }
+        let popup2 = document.getElementById("popup1");
+        function openPopup1(){
+            popup2.classList.add("open");
+        }
+        function closePopup1(){
+            popup2.classList.remove("open"); 
         }
     </script>    
 </body>

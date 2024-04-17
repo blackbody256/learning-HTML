@@ -85,3 +85,22 @@
     font-size: 22px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+.popup input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+#icons{
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+.fa-brands{
+    font-size: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+
+}
+.fa-brands:hover{
+    font-size: 35px;
+}

@@ -6,6 +6,8 @@
         <title>La Grande De Paris</title>
         <link rel="stylesheet" href="AboutStyle.css">
         <link rel="icon" href="Images/Favicon.jpg">
+        <link rel="stylesheet" href="all.min.css">
+        <link rel="stylesheet" href="fontawesome.min.css">
     </head>
     <body>
         <header>
@@ -18,8 +20,8 @@
                     <span><p>De Paris</p></span>
                 </div>
                 <div class="container1">
-                    <input type ="button" value = "Sign Up">
-                    <input type ="button" value ="Login">
+                    <input type ="button" value = "Sign Up" onclick="openPopup1()">
+                    <input type ="button" value ="Login" onclick="openPopup()">
                     
                 </div>
             </section>
@@ -35,6 +37,43 @@
                     </ul>
                 </nav>
             </section>
+            <div class="popup"  id="popup1">
+                <img src="Images/Favicon.jpg" alt="this is an image">
+                <h2>Sign up</h2>
+                <br>
+                <input type="email" name="value" id="email" required pattern="[a-z0-9]+@[a-z0-9]+.[a-z]" placeholder="Email"><br>
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button onclick="closePopup1()">Submit</button>
+                <p>Or sign with a social network:</p><br>
+                <div id="icons">
+                    <i class="fa-brands fa-facebook" style="color: #74C0FC;"class="icon"></i>
+                    <i class="fa-brands fa-google" style="color: #2ec27e;" class="icon"></i>
+                    <i class="fa-brands fa-square-x-twitter" style="color: #74C0FC;" class="icon"></i>
+                </div>
+                <div class="remember">
+                    <input type="checkbox" id="check">
+                    <label for="check">Remember me</label>
+                </div>
+            </div>
+            <div class="popup"  id="popup">
+                <img src="Images/Favicon.jpg" alt="this is an image">
+                <h2>Login</h2>
+                <br>
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button onclick="closePopup()">Login</button>
+                <p>Or sign with a social network:</p><br>
+                <div id="icons">
+                    <i class="fa-brands fa-facebook" style="color: #74C0FC;"class="icon"></i>
+                    <i class="fa-brands fa-google" style="color: #2ec27e;" class="icon"></i>
+                    <i class="fa-brands fa-square-x-twitter" style="color: #74C0FC;" class="icon"></i>
+                </div>
+                <div class="remember">
+                    <input type="checkbox" id="check">
+                    <label for="check">Remember me</label>
+                </div>
+            </div>
             <br><br>
 
             
@@ -65,5 +104,6 @@
                 <a href="mail to laGrande@fake.com" title="mail to us"><p>LaGrande@fake.com</p></a>
             </div>
         </footer>
+        <script src="Functioning.js"></script>
     </body>
 </html>

@@ -202,3 +202,86 @@ footer div{
     height: 100px;
     border-radius: 50%;
 }
+/*this for the popup*/
+.popup{
+    width:400px;
+    background: transparent;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding:0 30px 30px;
+    color: white;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open{
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+    transition: translate(-50%,-50%) scale(1);
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    margin-left: 35%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2{
+    margin-top: 38px;
+    font-size: 24px;
+    font-weight: 500px;
+    margin: 30px 0 10px;
+    text-align: center;
+}
+.popup p{
+    margin-top: 38px;
+    font-size:15px;
+    margin: 30px 0 10px;
+    text-align: center;
+}
+.popup button{
+    margin-top: 30px;
+    color:#fff;
+    width: 100%;
+    padding: 10px 0;
+    background: rgb(38, 176, 176);
+    border:0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+.popup input{
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+    border:1px solid grey;
+    font-size: 22px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+#icons{
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+.fa-brands{
+    font-size: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+
+}
+.fa-brands:hover{
+    font-size: 35px;
+}
+

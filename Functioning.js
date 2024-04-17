@@ -28,3 +28,10 @@ function openPopup(){
 function closePopup(){
     popup.classList.remove("open"); 
 }
+let popup2 = document.getElementById("popup1");
+function openPopup1(){
+    popup2.classList.add("open");
+}
+function closePopup1(){
+    popup2.classList.remove("open"); 
+}
