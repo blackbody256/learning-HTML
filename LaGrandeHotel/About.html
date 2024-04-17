@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>La Grande De Paris</title>
+        <link rel="stylesheet" href="CSS files/AboutStyle.css">
+        <link rel="icon" href="Images/Favicon.jpg">
+        <link rel="stylesheet" href="CSS files/all.min.css">
+        <link rel="stylesheet" href="CSS files/fontawesome.min.css">
+    </head>
+    <body>
+        <header>
+            <section class="container">
+                <div class="container1">
+                    <span><img src="Images/Favicon.jpg" style="width: 100px;" alt="the logo of La Grande Hotel" id="logo1"></span>
+                    <span>
+<p>La Grande</p></span>
+                    <span><p>Hotel</p></span>
+                    <span><p>De Paris</p></span>
+                </div>
+                <div class="container1">
+                    <input type ="button" value = "Sign Up" onclick="openPopup1()">
+                    <input type ="button" value ="Login" onclick="openPopup()">
+                    
+                </div>
+            </section>
+            <section id="Name">
+               <img src="Images/legrandebanner.png" alt="Hotel Banner" id="hotelbanner" height="300px" width="1250px">
+                
+                <nav>
+                    <ul id="navbar">
+                        <li><b><a href="Home.html" style="font-size:30px;">HOME</a></b></li>
+                        <li><b><a href="Booking.html" style="font-size:30px;">BOOKING</a></b></li>
+                        <li><b><a href="About.html" style="font-size:30px;">ABOUT</a></b></li>
+                        <li><b><a href="Contacts.html" style="font-size:30px;">CONTACTS</a></b></li>
+                    </ul>
+                </nav>
+            </section>
+            <div class="popup"  id="popup1">
+                <img src="Images/Favicon.jpg" alt="this is an image">
+                <h2>Sign up</h2>
+                <br>
+                <input type="email" name="value" id="email" required pattern="[a-z0-9]+@[a-z0-9]+.[a-z]" placeholder="Email"><br>
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button onclick="closePopup1()">Submit</button>
+                <p>Or sign with a social network:</p><br>
+                <div id="icons">
+                    <i class="fa-brands fa-facebook" style="color: #74C0FC;"class="icon"></i>
+                    <i class="fa-brands fa-google" style="color: #2ec27e;" class="icon"></i>
+                    <i class="fa-brands fa-square-x-twitter" style="color: #74C0FC;" class="icon"></i>
+                </div>
+                <div class="remember">
+                    <input type="checkbox" id="check">
+                    <label for="check">Remember me</label>
+                </div>
+            </div>
+            <div class="popup"  id="popup">
+                <img src="Images/Favicon.jpg" alt="this is an image">
+                <h2>Login</h2>
+                <br>
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button onclick="closePopup()">Login</button>
+                <p>Or sign with a social network:</p><br>
+                <div id="icons">
+                    <i class="fa-brands fa-facebook" style="color: #74C0FC;"class="icon"></i>
+                    <i class="fa-brands fa-google" style="color: #2ec27e;" class="icon"></i>
+                    <i class="fa-brands fa-square-x-twitter" style="color: #74C0FC;" class="icon"></i>
+                </div>
+                <div class="remember">
+                    <input type="checkbox" id="check">
+                    <label for="check">Remember me</label>
+                </div>
+            </div>
+            <br><br>
+
+            
+        </header>
+        <main>
+            <h1><i>About Grand Hotel</i></h1>
+            <p>Welcome to Grand Hotel, where luxury meets comfort. Located in the heart of the city, our hotel offers an unparalleled experience for both business and leisure travelers.</p>
+            <h2><i>Our Story</i></h2>
+            <p>Established in 1990, Grand Hotel has been a landmark destination for travelers from all around the world. With our commitment to exceptional service and attention to detail, we have earned a reputation for excellence in hospitality.</p>
+            <h2><i>Our Mission</i></h2>
+            <p>At Grand Hotel, our mission is to provide guests with a memorable stay that exceeds their expectations. We strive to create a welcoming environment where every guest feels valued and cared for.</p>
+            <h2><i>Our Team</i></h2>
+            <p>Our dedicated team of hospitality professionals is passionate about delivering exceptional service. From our front desk staff to our housekeeping team, every member of the Grand Hotel family is committed to ensuring your comfort and satisfaction.</p>
+            <h2><i>Our Amenities</i></h2>
+            <p>Grand Hotel offers a range of amenities designed to enhance your stay. From our luxurious spa and fitness center to our rooftop restaurant with panoramic views, we provide everything you need for a relaxing and enjoyable experience.</p>
+            <h2><a href="Contacts.html" title="Contant us">Contact Us</a></h2>
+            <p>If you have any questions or would like to make a reservation, please don't hesitate to contact us. Our friendly staff is available 24/7 to assist you.</p>
+            <p>Email: LaGrande@fake.com</p>
+            <p>Phone: +256 700 000 000</p>
+        </main>
+        <footer>
+            <div>
+                <img src="Images/Favicon.jpg" style="width: 100px;" alt="the logo of La Grande Hotel" id="logo1">
+            </div>
+            <div style="font-family: Helvetica, Arial, sans-serif; font-size: medium;">
+                <p>Copyright &copy; 2024 La Grande De Paris</p>
+                <p>All rights reserved</p>
+                <a href="mail to laGrande@fake.com" title="mail to us"><p>LaGrande@fake.com</p></a>
+            </div>
+        </footer>
+        <script src="JavaScript files/Functioning.js"></script>
+    </body>
+</html>

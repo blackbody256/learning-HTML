@@ -1,0 +1,248 @@
+@font-face {
+    font-family: Poppins;
+    src: url('FONTS/Poppins.ttf');
+}
+
+@font-face {
+    font-family: Cinzel;
+    src: url('FONTS/Cinzel.ttf');
+}
+
+h1{
+    margin-top: 90px;;
+    text-align: center;
+    font-family: 'Cinzel';
+}
+
+body{
+    font-family: 'Poppins';
+}
+
+#progress{
+    background-color: white;
+    border:2px solid black;
+    position: fixed;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 10px;
+    height:60px;
+    width:60px;
+    display: none;
+    place-items: center; /*Puts arrow in the middle*/
+    box-shadow: 0 0 10px rgba(0,0,0, 0.2);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#progress-value{
+    display: block;
+    padding: 0%;
+    width:50px;
+    background-color:transparent;
+    display: grid;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 11px;
+    font-family: 'Poppins';
+    color:black;
+}
+
+#progress-value:hover{
+    color:orange;
+}
+
+nav{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 80px;
+    background: #4a7eb2;
+    z-index:1000;
+}
+
+nav img{
+    width:150px;
+    position: absolute;
+    left:5%; 
+    margin-top: -27px;
+}
+
+nav ul{
+    float:right;
+    margin-right:25px;
+    margin-top:1px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+    list-style: none;
+}
+
+nav ul li a{
+    position: relative;
+    color:white;
+    font-size: 18px;
+    padding: 2px 0; /*Space between unerline and word*/
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav ul li a:before{
+    position: absolute;
+    content:'';
+    left:0;
+    bottom:0;
+    height:2px;
+    width:100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .3s linear;
+}
+
+nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+label #menu, label #cancel{
+    color:white;
+    font-size: 25px;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 700px){
+
+    label #menu{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width:100%;
+        height:100vh;
+        background: #82a7cd;
+        top: 85px;
+        left:-110%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 5;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+    left:0%;
+    }
+    #check:checked ~ label #menu{
+        display: none;
+    }
+    #check:checked ~ label #cancel{
+        display: block;
+    }
+}
+
+.slider-wrapper{
+    overflow: hidden;
+    position:relative;
+    width:100%;
+    margin:0 auto;
+}
+
+.Slider-wrapper{
+    position:relative;
+    width:100%;
+    margin:0% 0% 0% 0%;
+    overflow: hidden;
+}
+
+.slider{
+    display:flex;
+    aspect-ratio:16/9;
+    overflow-x:auto;
+    z-index: 1;
+    position: relative;
+    scroll-snap-type:x mandatory;
+    scroll-snap-align: start;
+    scroll-behavior:smooth;
+    width:100%;
+    flex-shrink: 0;
+    box-shadow:0, 1.5rem, 3rem, -0.75rem hsla(0, 0%, 0%, 0.5);
+}
+
+.slider img{
+    flex:1 0 100%;
+    object-fit:cover;
+    width:100%;
+}
+
+.nav-btns{
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+    width:100%;
+    height:20px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index:2;
+}
+
+.nav-btns button{
+    height:150%;
+    background: transparent;
+    width:28px;
+    color: white;
+    border-color:white;
+    font-weight: bolder;
+    border: 2px solid;
+}
+
+.nav-btns button:hover{
+    color:gold;
+    cursor: pointer;
+}
+
+button{
+    margin-left: 25%;
+    width:50%;
+    padding:0%;
+    border: 1px solid black;
+    background-color:#E6E1DD;
+    height:50px;
+}
+
+button a{
+    display: block;
+    color:black;
+    text-decoration: none;
+    font-size: large;
+    font-family: 'Verdana';
+    text-transform: uppercase;
+    padding: 2%;
+}
+
+button:hover{
+    background-color: orange;
+}
+
+button a:hover{
+    color:white;
+}

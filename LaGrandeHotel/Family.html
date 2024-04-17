@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>La Grande De Paris</title>
+        <link rel="stylesheet" href="CSS files/RoomStyle.css">
+        <link rel="icon" href="Images/Favicon.jpg">
+        <link rel="stylesheet" href="CSS files/all.min.css">
+        <link rel="stylesheet" href="CSS files/fontawesome.min.css">
+    </head>
+    <body>
+        <header>
+            <section class="container" style="background-color: silver;">
+                <div class="container1">
+                    <span><img src="Images/Favicon.jpg" style="width: 100px;" alt="the logo of La Grande Hotel" id="logo1"></span>
+                    <span><p>La Grande</p></span>
+                    <span><p>Hotel</p></span>
+                    <span><p>De Paris</p></span>
+                </div>
+                <div class="container1">
+                    <input type ="button" value = "Sign Up" onclick="openPopup1()">
+                    <input type ="button" value ="Login" onclick="openPopup()">
+                    <a href="Booking.html"><input type="button" value="Go back"></a>
+
+                </div>
+            </section>
+        </header>
+        <nav>
+            <ul id="navbar">
+                    <li><b><a href="Home.html" style="font-size:30px;">HOME</a></b></li>
+                    <li><b><a href="Booking.html" style="font-size:30px;">BOOKING</a></b></li>
+                    <li><b><a href="About.html" style="font-size:30px;">ABOUT</a></b></li>
+                    <li><b><a href="Contacts.html" style="font-size:30px;">CONTACTS</a></b></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="popup"  id="popup1">
+                <img src="Images/Favicon.jpg" alt="this is an image">
+                <h2>Sign up</h2>
+                <br>
+                <input type="email" name="value" id="email" required pattern="[a-z0-9]+@[a-z0-9]+.[a-z]" placeholder="Email"><br>
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button onclick="closePopup1()">Submit</button>
+                <p>Or sign with a social network:</p><br>
+                <div id="icons">
+                    <i class="fa-brands fa-facebook" style="color: #74C0FC;"class="icon"></i>
+                    <i class="fa-brands fa-google" style="color: #2ec27e;" class="icon"></i>
+                    <i class="fa-brands fa-square-x-twitter" style="color: #74C0FC;" class="icon"></i>
+                </div>
+                <div class="remember">
+                    <input type="checkbox" id="check">
+                    <label for="check">Remember me</label>
+                </div>
+            </div>
+            <div class="popup"  id="popup">
+                <img src="Images/Favicon.jpg" alt="this is an image">
+                <h2>Login</h2>
+                <br>
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button onclick="closePopup()">Login</button>
+                <p>Or sign with a social network:</p><br>
+                <div id="icons">
+                    <i class="fa-brands fa-facebook" style="color: #74C0FC;"class="icon"></i>
+                    <i class="fa-brands fa-google" style="color: #2ec27e;" class="icon"></i>
+                    <i class="fa-brands fa-square-x-twitter" style="color: #74C0FC;" class="icon"></i>
+                </div>
+                <div class="remember">
+                    <input type="checkbox" id="check">
+                    <label for="check">Remember me</label>
+                </div>
+            </div>
+            <section>
+            <img src="Images/family2.jpeg" alt="The Family Suite" id="slider">
+            </section>
+            <section id="details"  style="font-family:Montserrat";>
+                <h2 style="text-align: center;">Family Suite</h2>
+                <p style="text-align: center;">The family suite offers a large king size beds and garden views from the private balconies. 
+                    Ideal for business stays, this suite category features  an expansive Workspace and a relaxation area with a comfortable couch and coffee table.</p>
+                <hr>
+                <a href="payment.html" title="To the payment page"><input id="book_now" type="button" value="Book Now"></a>
+            </section>
+            <h1 style="text-align:center; font-family:Montserrat"> Room Amenities </h1>
+                <section id="amenities"  style="font-family:Montserrat";>
+                    <br>
+                    <ul>
+                        <li>Complimentary newspaper</li>
+                        <li>Complimentary wired and wireless Internet</li>
+                        <li>Flat-screen IPTV with cable and satellite channels</li>
+                        <li>Relaxation area with a couch and coffee table</li>
+                    </ul>
+                    <ul>
+                        <li>Minibar</li>
+                        <li>One King Bed</li>
+                        <li>24-hour room service</li>
+                        <li>Safe</li>
+                    </ul>
+                </section>
+                
+
+            </section>
+
+        </main>
+        <footer>
+            <div>
+                <img src="Images/Favicon.jpg" style="width: 100px;" alt="the logo of La Grande Hotel" id="logo1">
+            </div>
+            <div style="font-family: Helvetica, Arial, sans-serif; font-size: medium;">
+                <p>Copyright &copy; 2024 La Grande De Paris</p>
+                <p>All rights reserved</p>
+                <a href="mail to laGrande@fake.com" title="mail to us"><p>LaGrande@fake.com</p></a>
+            </div>
+        </footer>
+
+        <script src="JavaScript files/Functioning.js"></script>
+    </body>
+</html>

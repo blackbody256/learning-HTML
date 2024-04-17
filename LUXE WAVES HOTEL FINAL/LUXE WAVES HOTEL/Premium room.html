@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium room</title>
+    <link rel="stylesheet" href="Individual rooms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <script src="Premium room.js"></script>
+</head>
+<body>
+
+    <div id="progress">
+        <span id="progress-value">&#x1F815;<br>scroll to top</span>
+    </div>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa-solid fa-bars" id="menu"></i>
+            <i class="fa-solid fa-xmark" id="cancel"></i>
+        </label>
+
+        <img src="IMAGES/logo transparent white 2.png"/>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="Rooms.html">Rooms</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact us</a></li>
+        </ul> 
+    </nav>
+
+    <h1>PREMIUM ROOM</h1>
+
+    <p>
+        <font face='Bodoni MT'><i>Premium Rooms</i></font> offer a bedroom with a king-size bed, separate living area with a sofa bed, en-suite bathrooom, balcony with partial ocean view.
+    </p>
+
+    <p>
+        Maximum occupants: 2 adults, 2 children
+    </p>
+
+        <div class="Slider-wrapper"> 
+            <div class="slider">
+                <img src="IMAGES/premium room pic 1.jpg" alt="slide 1" id="slide"/> 
+            </div>
+
+            <div class="nav-btns">
+                <button id="prev-btn" onclick="showPrevImage()">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button id="next-btn" onclick="showNextImage()">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+        </div>
+    
+    <p>
+        Amenities: 
+        <ul>
+            <li>Complimentary breakfast</li>
+            <li>Access to executive lounge</li>
+            <li>Evening cocktails</li>
+            <li>Premium bath amenities</li>
+        </ul>
+    </p>
+    <p>PRICE: Starting from $400 per night</p>
+    <button><a href="Reservation.html"> Book now</a> </button>
+</body>
+</html>

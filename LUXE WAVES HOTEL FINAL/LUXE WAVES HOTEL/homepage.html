@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe waves hotel homepage</title>
+    <link rel="stylesheet" type="text/css" href="homepage.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="homepage.js"></script>
+</head>
+<body>
+    <div id="progress">
+        <span id="progress-value">&#x1F815;<br>scroll to top</span>
+    </div>
+    
+        <div class="Slider-wrapper">
+            <div class="navbar">
+                <nav id="nav">
+                    <input type="checkbox" id="check">
+                    <label for="check">
+                        <i class="fa-solid fa-bars" id="menu"></i>
+                        <i class="fa-solid fa-xmark" id="cancel"></i>
+                    </label>
+            
+                    <img src="IMAGES/logo transparent white 2.png"/>
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="Rooms.html">Rooms</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Contact.html">Contact us</a></li>
+                    </ul> 
+                </nav>
+            </div>
+            
+            <div class="slider">
+                <img src="IMAGES/hotel outside view 1.jpg" alt="slide 1" id="slide"/>                     
+            </div>
+
+            <div class="nav-btns">
+                <button id="prev-btn" onclick="setPrevImage()">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+
+                <button id="next-btn" onclick="setNextImage()">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <p>WELCOME to Luxe Waves Hotel where luxury meets the rhythm of nature. Experience the epitome of refined elegance and personalized service during your stay with us.
+            Located just steps away from the pristine shores of the Carribean, our hotel offers a perfect seaside escape.
+            Enjoy breathtaking views of the sparkling ocean from our rooms and suites. Explore the vibrant beachfront community, indulge in water sports, or simply relax on the sand and soak up the sun.
+
+        </p>
+
+    <h2>AMENITIES</h2>
+    <ul class="amenity">
+        <li>Valet parking and car rental services</li>
+        <li>Infinity rooftop pools overlooking the ocean</li>
+        <li>Fine dining restaurants with international cuisine</li>
+        <li>Exclusive access to two private beaches</li>
+        <li>Beachfront bars and lounges</li>
+        <li>Ocean view rooms and suites</li>
+        <li>Water sports equipment rental such as kayaks, paddledboards, and snorkeling gear</li>
+        <li>Kids' club</li>
+        <li>High-speed Wi-Fi</li>
+        <li>Discount rates on fitness club fee</li>
+        <li>24-hour room service</li>
+        <li>Spa and wellness facilities</li>
+    </ul>
+    
+    <h2>GALLERY</h2>
+    <div class="facility">
+
+        <div class="fac-image">
+            <img id="fac" src="IMAGES/hotel swimming pool 1.jpg" alt="slide 1"/>      
+        </div>
+
+        <div class="nav-btns">
+            <button id="prev-btn" onclick="showPrevImage()">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <button id="next-btn" onclick="showNextImage()">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+        
+    </div>
+
+    <p>Book your luxury escape today and immerse yourself in the unparalleled experience that awaits at Luxe Waves hotel.
+        Welcome to your home away from home.
+    </p>
+
+    <button class="book"><a href="Reservation.html"> Book now</a> </button>
+    <br>
+
+    <h2>CLIENT REVIEWS</h2>
+
+    <div class="rev-wrapper">
+
+        <div class="review">
+            <div class="profile">
+                <div class="name">
+                    <strong>TUSIIME MABLE</strong>
+                </div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                We had an amazing stay at Luxe Waves hotel! The location couldn't be better-just a short walk to the beach.
+                The staff were incredibly friendly and helpful, and the room was clean and comfortable. We'll definitely be back!
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="profile">
+                <div class="name">
+                    <strong>ABONYO NINA MITCHELL</strong>
+                </div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            
+            <div class="testimonial">
+                Our stay at Luxe Waves hotel was fantastic. The elegant decor, comfortable rooms, and attentive staff made for a 
+                truly enjoyable experience. We especially loved the delicious breakfast options and the relaxing ambiance of the hotel.
+            </div>  
+        </div>
+
+        <div class="review">
+            <div class="profile">
+                <div class="name">
+                    <strong>INGABIRE PEACE</strong>
+                </div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                Our recent stay at Luxe Waves hotel was nothing short of excellent. The hotel's amenities, including the pool and fitness 
+                center, were top-notch. The staff were friendly and accommodating , making us feel right at home throughout our stay.
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="profile">
+                <div class="name">
+                    <strong>KYOMUGISHA CHRISTINE</strong>
+                </div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                Our experience at Luxe Waves hotel was outstanding. From the moment we checked in, we felt welcomed and valued as guests.
+                 The hotel's attention to cleanliness and safety measures gave us peace of mind, and the comfortable beds ensured a restful night's sleep. We can't wait to return for another stay!
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="hotel-info">
+            <p>
+                © 2024 Luxe Waves Hotel. All rights reserved.<br>
+                Luxe Waves Hotel | Prospect Bay St. James BB23000Barbados<br>
+                Phone: (+66)38 250421 | (+66)22947272<br>
+                E-mail: info@fakeluxewaveshotel.com
+            </p>
+        </div>
+        <div class="hotel-links">
+            <ul>
+                <li><a href="homepage.html"> HOME </a></li>
+                <li><a href="Rooms.html"> ROOMS </a></li>
+                <li><a href="About.html"> ABOUT </a></li>
+                <li><a href="Contact.html"> CONTACT US </a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,308 @@
+@keyframes slider{
+    0%{
+        transform:translateX(0);
+    }
+    20%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-100%);
+    }
+    45%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-200%);
+    }
+    70%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-300%);
+    }
+    95%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-400%);
+    }
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(Fonts/./montserrat/Montserrat-Medium.ttf);
+    font-family: Maxini;
+    src: url(Fonts/maxini.ttf);
+}
+body{
+    background-image: url("Images/background.jpg");
+    background-size: cover;
+    color:#000;
+    border:3px solid white;
+    margin:auto;
+    min-height: 100vh;
+}
+/*this is give the whole body a maximum width and change the background color to white and also place it in the middle of the webpage of the browser*/
+.container{
+    display:flex;
+    border:none;
+
+}
+/*this to align the top span horizontal by setting the outer container's display to flex and the inner elements' flex = 1*/
+.container .container1{
+    flex:1;
+    padding:10px;
+    display: flex;
+}
+/*this is for the top spans of the web page*/
+.container1 > span{
+    padding-left : 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large
+    
+}
+/*this is for the button of sign in and login in at the top*/
+.container1 > input[type="button"]{
+   flex: 1;
+   max-width: 100px;
+   padding: 10px;
+   border-radius: 20%;
+   margin: auto;
+   align-items: right;
+}
+/*this is to design the navigation bar horizonatallyand to set it's background and the basic styling*/
+#navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0,0,0,0.2);
+    border:none;
+    width:1000px;
+    height: 50px;
+    border-radius: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 160px;
+    flex-direction: row;
+    padding: 10px;
+    
+}
+/*this is to design the a tag of the navigation bar*/
+#navbar a{
+    text-decoration: none;    
+    display:inline-block;
+    text-align: center;
+    padding: 10px 15px;
+    color: silver;
+    margin: 0 10px;
+    font-family: "Montserrat";
+}
+/*this is to remove the bulleting points on the list items of the navigation bar*/
+#navbar li{
+    list-style-type:none;
+    font-size: large;
+
+    
+}
+/* this is to set the pseudo hover  class of the navigation bar*/
+#navbar a:hover{
+    background-color:rgb(190,190,190);
+    color: white;
+}
+/*this is to set the pseudo active class of the navigation bar*/
+#navbar a:active{
+    background-color: white;
+    color: black;
+}
+#navbar a:visited{
+    color: antiquewhite;
+}
+
+/*This to set so the  img have the maximum width and height of the window if possible*/
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/*this to set the marquee designs of the welcome page*/
+#welcome{
+    font-size: 100px;
+    background-color: silver;
+    height: 150px;
+}
+/*this is to edit the sliding welcome marque*/
+#welcome p{
+    font-family: 'Maxini', Courier, monospace;
+    margin-top: auto;
+    margin-bottom: auto;
+    color:black;
+}
+/*this is to edit the paragraph in the marque*/
+main{
+    background-color: grey;
+}
+/*this is to give the main a background color*/
+.imgContainer{
+    margin: 0.5em;
+    padding: 0.5em;
+}
+/*this is edit the section that carries the image slider*/
+#slider{
+    position: relative;
+    max-width: 100%;
+    margin:0 auto;
+    overflow: hidden;
+}
+/*this is to so that the images overflow horizontally and the maxwidth is set to 100%*/
+#slider figure{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; 
+    scroll-behavior: smooth;
+    border-radius:0.5rem;
+}
+/*this is edit the container that carrys the images so that its display is flex and the ratio is 16/9 also the style like the shadow and border*/
+#slider img{
+    flex:1 0 100%;
+    scroll-snap-align:start;
+    object-fit:cover;
+    animation: slider 20s linear infinite;
+}
+/*edits the image ofimages so that flex is 1, object-fit to cover and also add the animation so that the animation slides automatically*/
+.slider-nav{
+    display: flex;
+    column-gap:1rem;
+    position: absolute;
+    bottom:1.25rem;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+/*this is to edit the navigation dots for the images*/
+.slider-nav> a{
+    width:0.7em;
+    height: 0.7em;
+    border-radius: 50%;
+    background-color:transparent;
+    border:2px solid rgb(249, 249, 249);
+    transition: all 0.5s;
+}
+/*this is to edit the navigation hyperlinks*/
+.slider-nav> a:hover{
+    border-color: purple;
+    width: 1.5em;
+    height: 1.5em;
+}
+/*this is to edit when the the dots are hovered over*/
+.slider-nav> a:active{
+    width: 3em;
+    height: 3em;    
+}
+/*this is to edit when the dots are active or when clicked on*/
+hr{
+    size: 2em;
+    box-shadow: 5em 5em 5em 5%;
+}
+/*this is just to style the line separating the main and the footer*/
+
+footer{
+    display: flex;
+    background-color: grey;
+}
+/*this is to style the footer*/
+footer div{
+    flex: 1;
+    padding: 10px;
+}
+/*for the logo*/
+#logo1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+/*this for the popup*/
+.popup{
+    width:400px;
+    background: transparent;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding:0 30px 30px;
+    color: white;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open{
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+    transition: translate(-50%,-50%) scale(1);
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    margin-left: 35%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2{
+    margin-top: 38px;
+    font-size: 24px;
+    font-weight: 500px;
+    margin: 30px 0 10px;
+    text-align: center;
+}
+.popup p{
+    margin-top: 38px;
+    font-size:15px;
+    margin: 30px 0 10px;
+    text-align: center;
+}
+.popup button{
+    margin-top: 30px;
+    color:#fff;
+    width: 100%;
+    padding: 10px 0;
+    background: rgb(38, 176, 176);
+    border:0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+.popup input{
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+    border:1px solid grey;
+    font-size: 22px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+#icons{
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+.fa-brands{
+    font-size: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+
+}
+.fa-brands:hover{
+    font-size: 35px;
+}
+
+
+
+

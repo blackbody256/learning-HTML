@@ -1,0 +1,257 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(Fonts/montserrat/Montserrat-Medium.ttf);
+    font-family:Merry ;
+    src: url(Fonts/Merriweather/Merriweather-Bold.ttf);
+}
+body{
+    background-image: url("Images/background.jpg");
+    background-size: cover;
+    color:#000;
+    margin:auto;
+    min-height: 100vh;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+/*this is give the whole body a maximum width and change the background color to white and also place it in the middle of the webpage of the browser*/
+.container{
+    display:flex;
+    border:none;
+
+}
+/*this to align the top span horizontal by setting the outer container's display to flex and the inner elements' flex = 1*/
+.container .container1{
+    flex:1;
+    padding:10px;
+    display: flex;
+}
+/*this is for the top spans of the web page*/
+.container1 > span{
+    padding-left : 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+/*this is for the button of sign in and login in at the top*/
+.container1 > input[type="button"]{
+   flex: 1;
+   max-width: 100px;
+   padding: 10px;
+   border-radius: 20%;
+   margin: auto;
+   align-items: right;
+}
+/*this is to design the navigation bar horizonatally and to set it's background and the basic styling*/
+#navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0,0,0,0.2);
+    border:none;
+    width:1000px;
+    height: 50px;
+    border-radius: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 160px;
+    font-family: "Montserrat";
+    padding: 10px;
+    flex-direction: row;
+
+}
+/*this is to design the a tag of the navigation bar*/
+#navbar a{
+    text-decoration: none;    
+    display:inline-block;
+    text-align: center;
+    padding: 10px 15px;
+    color: silver;
+    margin: 0 10px;
+    font-family: "Montserrat";
+}
+/*this is to remove the bulleting points on the list items of the navigation bar*/
+#navbar li{
+    list-style-type:none;
+    font-size: large;
+
+    
+}
+/* this is to set the pseudo hover  class of the navigation bar*/
+#navbar a:hover{
+    background-color:rgb(190, 190, 190);
+    color: white;
+}
+/*this is to set the pseudo active class of the navigation bar*/
+#navbar a:active{
+    background-color: white;
+    color: black;
+}
+#Location{
+    height: 100px;
+    text-align: center;
+    border-radius: 5%;
+}
+/*this is to design the location banner  and the contact us banner*/
+#Location h1{
+    font-size: 50px;
+    font-family:"Montserrat";
+    background: transparent;
+    backdrop-filter: blur(20px);
+    color: black;
+    padding-top: 20px;
+}
+/*this is to design the map of the location*/
+#map{
+    width: 100%;
+    height: 1000px;
+}
+/*this is to design the form of the page*/
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background: transparent;
+    font-family: "Montserrat";
+}
+#form input{
+    background: transparent;
+    backdrop-filter: blur(20px);
+    color: #fff;
+}
+#form textarea{
+    background: transparent;
+    color: #fff;
+    font-weight: 500;
+}
+#form select{
+    background: transparent;
+    color: #fff;
+    font-size: x-large;
+}
+form{
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 5px 5px 10px 5px gray;
+    font-size: large;
+}
+main{
+    background: transparent;
+    backdrop-filter: blur(9px); 
+}
+#Contact{
+    display: flex;
+    background-color: grey;
+}
+.Contact1{
+    font-family: 'Merry', Courier, monospace;
+    flex: 1;
+}
+footer{
+    display: flex;
+    background-color: grey;
+}
+footer div{
+    flex: 1;
+    padding: 10px;
+}
+#Submit{
+    background-color: antiquewhite;
+    background: transparent;
+    backdrop-filter: blur(40px);
+    font-size: large;
+    border-radius: 5px;
+    padding:5px;
+}
+/*for the logo*/
+#logo1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/*this for the popup*/
+.popup{
+    width:400px;
+    background: transparent;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding:0 30px 30px;
+    color: white;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open{
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+    transition: translate(-50%,-50%) scale(1);
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    margin-left: 35%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2{
+    margin-top: 38px;
+    font-size: 24px;
+    font-weight: 500px;
+    margin: 30px 0 10px;
+    text-align: center;
+}
+.popup p{
+    margin-top: 38px;
+    font-size:15px;
+    margin: 30px 0 10px;
+    text-align: center;
+}
+.popup button{
+    margin-top: 30px;
+    color:#fff;
+    width: 100%;
+    padding: 10px 0;
+    background: rgb(38, 176, 176);
+    border:0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+.popup input{
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+    border:1px solid grey;
+    font-size: 22px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+#icons{
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+.fa-brands{
+    font-size: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+
+}
+.fa-brands:hover{
+    font-size: 35px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" type="text/css" href="Reservation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa-solid fa-bars" id="menu"></i>
+            <i class="fa-solid fa-xmark" id="cancel"></i>
+        </label>
+
+        <img src="IMAGES/logo transparent white 2.png"/>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="Rooms.html">Rooms</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact us</a></li>
+        </ul> 
+    </nav>
+    <br>
+
+    <div class="form">
+        <form>
+            <h3>RESERVATION FORM</h3>
+            First Name: <br> <input type="text" name="FName" required> <br>
+            Middle Names: <br> <input type="text" name="MNames"> <br>
+            Last Name: <br> <input type="text" name="LName" required> <br>
+            E-mail address: <br> <input type="email" name="Email"> <br>
+            Contact: <br> <input type="tel" name="FName" required> <br>
+            Number of guests: <br> <input type="number" name="Occupants" required> <br>
+            Number of rooms: <br> <input type="number" name="Rooms" required> <br>
+            <div class="check-cont">
+                <div class="check">Check-in date: <br> <input type="date" name="Date-in" required> <br></div>
+                <div class="check">Check-out date: <br> <input type="date" name="Date out" required> <br></div>
+            </div>
+            <br>
+            <input type="submit" value="book">
+        </form>
+    </div>
+
+    <footer>
+        <div class="hotel-info">
+            <p>
+                © 2024 Luxe Waves Hotel. All rights reserved.<br>
+                Luxe Waves Hotel | Prospect Bay St. James BB23000Barbados<br>
+                Phone: (+66)38 250421 | (+66)22947272<br>
+                E-mail: info@fakeluxewaveshotel.com
+            </p>
+        </div>
+        <div class="hotel-links">
+            <ul>
+                <li><a href="homepage.html"> Home </a></li>
+                <li><a href="Rooms.html"> Rooms </a></li>
+                <li><a href="About.html"> About </a></li>
+                <li><a href="Contact.html"> Contact us </a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

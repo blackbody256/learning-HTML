@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--the below meta tags are useful if our website link is being shared across social media platforms-->
+    <meta name="description" content="This is hotel website used to book and review la Grande hotel">
+    <meta name="author" content="Group T">
+    <meta property="og:title" content="La Grande Hotel De Paris">
+    <meta property="og:type" content="webpage">
+    <meta property="og:url" content="htttps://www.LaGrandeHotel.com">
+    <meta property="og:description" content="This is hotel website used to book and review la Grande hotel">
+    <meta property="og:image" content="image.png" href="Images/legrandebanner.png">
+    <meta property="og:locale" content="en-US">
+    <meta property="og:site-name" content="La-Grande Hotel De Paris">
+    <!--Below am just setting the title of the website and link the favicon and css file-->
+    <title>La Grande De Paris</title>
+    <link rel="stylesheet" href="CSS files/HomeStyle.css">
+    <link rel="icon" href="Images/Favicon.jpg">
+    <link rel="stylesheet" href="CSS files/all.min.css">
+    <link rel="stylesheet" href="CSS files/fontawesome.min.css">
+</head>
+<body>
+    <header>
+        <section class="container">
+            <div class="container1">
+                <span><img src="Images/Favicon.jpg" style="width: 100px;" alt="the logo of La Grande Hotel" id="logo1"></span>
+                <span><p>La Grande</p></span>
+                <span><p>Hotel</p></span>
+                <span><p>De Paris</p></span>
+            </div>
+            <div class="container1">
+                <input type ="button" value = "Sign Up" onclick="openPopup1()">
+                <input type ="button" value ="Login" onclick="openPopup()">
+                
+            </div>
+        </section>
+        <section id="Name">
+             <img src="Images/legrandebanner.png" alt="Hotel Banner" id="hotelbanner" height="300px">
+            
+            <nav>
+                <ul id="navbar">
+                    <li><b><a href="Home.html" style="font-size:30px;">HOME</a></b></li>
+                    <li><b><a href="Booking.html" style="font-size:30px;">BOOKING</a></b></li>
+                    <li><b><a href="About.html" style="font-size:30px;">ABOUT</a></b></li>
+                    <li><b><a href="Contacts.html" style="font-size:30px;">CONTACTS</a></b></li>
+                </ul>
+            </nav>
+        </section>
+        <h4 style="color: white;">Note: you have to login/sign up to be able to book the rooms</h4>
+        <div class="popup"  id="popup1">
+            <img src="Images/Favicon.jpg" alt="this is an image">
+            <h2>Sign up</h2>
+            <br>
+            <input type="email" name="value" id="email" required pattern="[a-z0-9]+@[a-z0-9]+.[a-z]" placeholder="Email"><br>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button onclick="closePopup1()">Submit</button>
+            <p>Or sign with a social network:</p><br>
+            <div id="icons">
+                <i class="fa-brands fa-facebook" style="color: #74C0FC;"class="icon"></i>
+                <i class="fa-brands fa-google" style="color: #2ec27e;" class="icon"></i>
+                <i class="fa-brands fa-square-x-twitter" style="color: #74C0FC;" class="icon"></i>
+            </div>
+            <div class="remember">
+                <input type="checkbox" id="check">
+                <label for="check">Remember me</label>
+            </div>
+        </div>
+        <div class="popup"  id="popup">
+            <img src="Images/Favicon.jpg" alt="this is an image">
+            <h2>Login</h2>
+            <br>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button onclick="closePopup()">Login</button>
+            <p>Or sign with a social network:</p><br>
+            <div id="icons">
+                <i class="fa-brands fa-facebook" style="color: #74C0FC;"class="icon"></i>
+                <i class="fa-brands fa-google" style="color: #2ec27e;" class="icon"></i>
+                <i class="fa-brands fa-square-x-twitter" style="color: #74C0FC;" class="icon"></i>
+            </div>
+            <div class="remember">
+                <input type="checkbox" id="check">
+                <label for="check">Remember me</label>
+            </div>
+        </div>
+    </header>
+    <br><br>
+
+    <main>
+        <div id="welcome"><marquee><p><strong>Welcome at La Grande Hotel De Paris</strong></p></marquee></div>       
+       <section class="imgContainer">
+        <div id="slider">
+            <figure>
+                <img src="Images/image4.jpeg" alt="This is the over view of La Grande" id="slide-1">
+                <img src="Images/familytime.jpeg" alt="This is the over view of La Grande" id="slide-2">
+                <img src="Images/image5.jpg" alt="This is the over view of La Grande" id="slide-3">
+                <img src="Images/image6.jpg" alt="This is the over view of La Grande" id="slide-4">
+                <img src="Images/image4.jpeg" alt="This is the over view of La Grande" id="slide-5">
+            </figure>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+                <a href="#slide-5"></a>
+            </div>
+        </div>
+            
+    </section>
+
+    </main>
+    <hr>
+    <footer>
+        <div>
+        <img src="Images/Favicon.jpg" style="width: 100px;" alt="the logo of La Grande Hotel" id="logo1">
+        </div>
+        <div style="font-family: Helvetica, Arial, sans-serif; font-size: medium;">
+            <p>Copyright &copy; 2024 La Grande De Paris</p>
+            <p>All rights reserved</p>
+            <a href="mail to laGrande@fake.com" title="mail to us"><p>LaGrande@fake.com</p></a>
+        </div>
+    </footer>
+    <script src="JavaScript files/Functioning.js"></script>    
+</body>
+</html>

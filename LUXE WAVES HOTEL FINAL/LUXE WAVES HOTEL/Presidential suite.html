@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presidential suite</title>
+    <link rel="stylesheet" href="Individual rooms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <script src="Presidential suite.js"></script>
+</head>
+<body>
+
+    <div id="progress">
+        <span id="progress-value">&#x1F815;<br>scroll to top</span>
+    </div>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa-solid fa-bars" id="menu"></i>
+            <i class="fa-solid fa-xmark" id="cancel"></i>
+        </label>
+
+        <img src="IMAGES/logo transparent white 2.png"/>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="Rooms.html">Rooms</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact us</a></li>
+        </ul> 
+    </nav>
+
+    <h1>PRESIDENTIAL SUITE</h1>
+
+    <p>
+        <font face='Bodoni MT'><i>Presidential Suites</i></font> offer three bedrooms-two with king size beds and one with twin beds, spacious living area, dining area, three bathrooms, private rooftop terrace with a paranomic ocean view.
+    </p>
+
+    <p>
+        Maximum occupants: 6 adults, 4 children
+    </p>
+
+        <div class="Slider-wrapper">
+            <div class="slider">
+                <img src="IMAGES/presidential suite pic 1.jpg" alt="slide 1" id="slide"/>   
+            </div>
+
+            <div class="nav-btns">
+                <button id="prev-btn" onclick="showPrevImage()">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button id="next-btn" onclick="showNextImage()">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    
+    <p>
+        Amenities:
+        <ul>
+            <li> Personalized villa host</li>
+            <li>Private chef on request</li>
+            <li>Exclusive access to VIP events</li>
+        </ul>
+    </p>
+    <p>PRICE: Starting from $1,500 per night</p>
+    <h1>VIRTUAL TOURS</h1>
+    <div class="virtual-tours">
+        <video width="100%" height="500px" controls><source src="IMAGES/presidential suite vid 1.mp4" type="video/mp4"></video>
+    </div>
+    <button><a href="Reservation.html"> Book now</a> </button>
+</body>
+</html>
